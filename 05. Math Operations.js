@@ -1,19 +1,19 @@
 function solve(n1,n2,symbol){
-    let sum;
+    let total;
 if(symbol=='+'){
-sum = n1+n2;
+    total = n1+n2;
 }else if(symbol=='-'){
-    sum= n1-n2;
+    total= n1-n2;
 }else if(symbol=='*'){
-    sum=n1*n2;
+    total=n1*n2;
 }else if(symbol=='/'){
-    sum=n1/n2;
+    total=n1/n2;
 }else if(symbol=='%'){
-    sum=n1%n2;
+    total=n1%n2;
 }else if(symbol=='**'){
-    sum=n1**n2;
+    total=n1**n2;
 }
-console.log(sum);
+console.log(total);
 }
 
 solve(3,5.5, '*');
