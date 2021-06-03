@@ -1,4 +1,4 @@
-function cityTaxes(n,a,b) {
+function cityTaxes(n, a, b) {
     const city = {
         name: n,
         population: a,
@@ -8,25 +8,25 @@ function cityTaxes(n,a,b) {
             this.treasury += this.population * this.taxRate;
         },
         applyGrowth(percentage) {
-            this.population += Math.floor(percentage * this.population/100);
+            this.population += Math.floor(percentage * this.population / 100);
         },
         applyRecession(percentage) {
-            this.treasury -= Math.floor(this.treasury * percentage/100);
+            this.treasury -= Math.floor(this.treasury * percentage / 100);
         }
     }
     return city;
 }
-const city = 
-  cityTaxes('Tortuga',
-  7000,
-  15000);
+const city =
+    cityTaxes('Tortuga',
+        7000,
+        15000);
 console.log(city);
 
 const cityTwo =
-  cityTaxes('Tortuga',
-  7000,
-  15000);
-  cityTwo.collectTaxes();
+    cityTaxes('Tortuga',
+        7000,
+        15000);
+cityTwo.collectTaxes();
 console.log(cityTwo.treasury);
 cityTwo.applyGrowth(5);
 console.log(cityTwo.population);
