@@ -1,11 +1,10 @@
 function addItem() {
-    let selectIdUlLi = document.querySelector('#items');
-    let inputElement = document.getElementById('newItemText');
+    let pickUpItems = document.getElementById('items');
+    let inputText = document.getElementById('newItemText')
 
-    let newLiElement = document.createElement('li');
-    newLiElement.textContent = inputElement.value;
-    selectIdUlLi.appendChild(newLiElement)
-
-
-    inputElement.value = ' ';
+    
+    let newItem = document.createElement('li');
+    newItem.textContent = inputText.value;
+    pickUpItems.appendChild(newItem);
+    inputText.value = ' ';
 }
