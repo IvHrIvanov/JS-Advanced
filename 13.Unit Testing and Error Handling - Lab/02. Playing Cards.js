@@ -11,7 +11,7 @@ function solve(card, suit) {
         if (currentSuit == 'S') {
             currentSuit = '\u2660';
         } else if (currentSuit == 'H') {
-            currentSuit = '\u2665 ';
+            currentSuit = '\u2665';
         } else if (currentSuit == 'D') {
             currentSuit = '\u2666';
         } else if (currentSuit == 'C') {
